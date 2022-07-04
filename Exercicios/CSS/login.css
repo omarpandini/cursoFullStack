@@ -1,0 +1,78 @@
+﻿body {
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main {
+    width: 30em;
+    height: 40em;
+    background-image: radial-gradient(
+      circle at 39.43% 109.97%,
+      #6fedff 0,
+      #4490e5 50%,
+      #1a3d66 100%
+    );
+    margin-top: 10%;
+    border-radius: 20px;
+    opacity: 0.9;
+  }
+
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputs {
+    padding: 30px;
+  }
+
+
+  .inputCs input {
+    height: 4em;
+    width: 90%;
+    border: 0px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    margin-top: 20px;
+
+  }
+
+  ::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #imgLogin {
+    display: flex;
+    justify-content: center;
+  }
+
+  #imgLogin img {
+    width: 100px;
+  }
+
+   
+  #btnLogin{
+    height: 3em;
+    width: 15em;
+    margin-top: 50%;
+    margin-left: 12%;       
+    border: none;
+    border-radius: 10px;
+    background-color: #dc2323;
+    color: white;
+    font-size: 20px;
+   
+  }
+
+  
+#btnLogin:hover{
+    background-color: #d65a5a;/*aqui está a resolução aqui define a cor que o botão deve receber depois de clicar*/
+}
+
+#btnLogin:focus{
+    background-color: #dc2323;
+
+}
