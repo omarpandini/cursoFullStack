@@ -7,11 +7,17 @@ li{
 h1{
     font-size: 50px;
     color: rgb(222, 211, 222);
-    border: 1px solid yellow;
+    border: 1px solid rgb(11, 18, 112);
+    border-radius: 10px;
+    border-width: 5px;
 }
 
 body{
     background-image: url('images/lua.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#divHeader{
+    width: 100%;
 }
