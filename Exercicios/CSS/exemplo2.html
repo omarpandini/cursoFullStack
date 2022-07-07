@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Seletores avançados -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 2</title>
+    <style>
+        /* todos os itens */
+        * {
+            /* border: 2px solid;*/
+        }
+
+        /* seletor de descendência */
+        li a {
+            color: rgb(192, 17, 17);
+            font-size: 18px;
+        }
+
+        /* seletor filho */
+        li>a {
+            background-color: beige;
+        }
+
+        /* seletor adjacente  - Sempre quando tiver um h3 logo após um h1, será aplicado o estilo*/
+        h1 + h3{
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabel de Custo da Voyager 1</h1>
+    <h3>Comunicação via Satélite</h3>
+    <ul>
+        <li>$1000,00</li>
+        <li>$2000,00</li>
+        <li>$3000,00</li>
+    </ul>
+    <h3>Ajustes de Rota </h3>
+    <ul>
+        <li>$1000,00</li>
+        <li>$2000,00</li>
+        <li>$3000,00</li>
+    </ul>
+    <h3>Monitoramento</h3>
+    <ul>
+
+        <li>
+            <div><a href=""> $1000,00</a></div>
+        </li>
+        <li><a href="">$2000,00</a></li>
+        <li><a href="">$3000,00</a></li>
+    </ul>
+
+</body>
+
+</html>
