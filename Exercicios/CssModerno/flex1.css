@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: darkgrey;
+    min-height: 100vh;
+    display: flex;
+    /*flex-direction: column-reverse;*/ /*Em formato de coluna reversa*/ 
+    /* column-gap: 15px; /*Distância entre os itens*/
+    gap: 0px 15px; /* Gap reúne os dois modos, primeiro row-gap, e depois colum-gap */
+     justify-content: center; 
+    /* justify-content: space-around;  Terá o mesmo espaço no início e no fim */
+    /* justify-content: space-between; Deixa os itens o mais separado possível */
+    /* justify-content: space-evenly; Deixa o espaço igual entre os itens */
+    align-items: center;  /*Quando está no modo padrão (linha) , o align-items irá ajustar verticalmente. Sempre será o inverso*/
+    /* align-items: stretch; Essa propriedade estica toda a linha, para isso, nesse caso, o heigth não pode ter valor */
+    flex-wrap: wrap;  /*Define se será quebrado o layout. Exemplo: se a resolução da tela for diminuindo, os box irão se ajustando para baixo*/
+    /* flex-wrap: wrap-reverse; Nesse caso, o último item irá para cima, não para baixo */
+    
+}
+
+.item{
+    width: 200px;
+    height: 200px; 
+    border: 2px solid;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
