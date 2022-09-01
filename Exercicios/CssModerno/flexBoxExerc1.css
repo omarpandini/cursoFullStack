@@ -31,6 +31,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
+}
+
+.item-box:hover{
+    border-color: red;
 }
 
 a{
