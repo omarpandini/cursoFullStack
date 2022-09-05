@@ -1,0 +1,27 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: darkgray;
+}
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 15px;
+   
+}
+
+.item{
+    background-color: white;
+    border: 1px solid;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

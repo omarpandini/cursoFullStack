@@ -1,0 +1,27 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: darkgray;
+    min-height: 100vh;
+    display: grid;
+    /*grid-template-columns: 25% 50% 25%;  */  /*Utilizando com percentual*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/ /*Utilizando Frames*/
+    grid-template-columns: 1fr 2fr 1fr 1fr;/*Utilizando frames com repeat*/
+    gap: 10px 15px;
+
+    /*grid-template-rows: 1fr 2fr 1fr;*/ /*Para linhas*/
+    grid-auto-rows: minmax(310px,auto);
+}
+
+.item{
+    background-color: white;
+    border: 2px solid;
+    font-size: 30px;
+    padding: 10px;
+
+}
