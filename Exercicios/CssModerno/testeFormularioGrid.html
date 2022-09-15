@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: darkgray;
+      }
+
+      .container {
+        display: grid;
+        min-height: 70vh;
+        grid-template-rows: 1fr 6fr 6fr;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        
+      }
+
+      .main-content {
+      }
+
+      .main-form{
+        background-color: white;
+        width: 70%;
+        height: 300px;
+        margin: 0 auto 0 auto;
+        margin-top: 10px;        
+      }
+
+      .group-itens{
+        display: flex;
+        padding: 20px;
+        
+      }
+
+      .forms-label{
+        width: 200px;
+        text-align: end;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+
+      .group-itens input{
+        height: 25px;
+        width: 500px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="header">
+        <p>HEADER</p>
+      </header>
+
+      <section class="main-content">
+
+        <div class="main-form">
+
+            <div class="form">
+
+            <div class="group-itens">
+                <label  class="forms-label" for="">Nome:</label>
+                <input type="text">
+                <label  class="forms-label"for="">Sobrenome:</label>
+                <input type="text">
+            </div>
+
+            <div class="group-itens">
+                <label class="forms-label" for="">Sexo:</label>
+                <input type="text">
+                <label class="forms-label" for="">Idade:</label>
+                <input type="text">
+            </div>
+
+            <div class="group-itens">
+                <label class="forms-label" for="">CPF</label>
+                <input type="text">
+                <label class="forms-label" for="">Data de Nascimento</label>
+                <input type="text">
+            </div>
+
+            </div>
+
+        </div>
+      </section>
+
+      <section class="main-content">
+
+        <div class="main-form">
+
+            <div class="form">
+
+            <div class="group-itens">
+                <label  class="forms-label" for="">Nome:</label>
+                <input type="text">
+                <label  class="forms-label"for="">Sobrenome:</label>
+                <input type="text">
+            </div>
+
+            <div class="group-itens">
+                <label class="forms-label" for="">Sexo:</label>
+                <input type="text">
+                <label class="forms-label" for="">Idade:</label>
+                <input type="text">
+            </div>
+
+            <div class="group-itens">
+                <label class="forms-label" for="">CPF</label>
+                <input type="text">
+                <label class="forms-label" for="">Data de Nascimento</label>
+                <input type="text">
+            </div>
+
+            </div>
+
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
