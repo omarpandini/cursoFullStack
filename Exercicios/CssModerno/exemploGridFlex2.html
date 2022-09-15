@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style>
+              
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@100&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+
+        .header , .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            font-family: Montserrat;
+        }
+
+        .middle{
+            background-color: beige;
+            flex-grow: 1;
+        }
+
+        .middle-title{
+            text-align: center;
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .grid-content{
+            display: grid;
+            grid-template-columns: 2fr 12fr;
+            gap: 5px;
+            min-height: 100vh;
+        }
+        
+        .grid-left{
+            background-image: linear-gradient(rgb(10, 35, 76), rgb(21, 56, 121));
+            border: 2px solid rgb(44, 86, 199);
+            min-height: 100vh;
+            border-radius: 10px;
+        }
+        
+        .grid-right{
+            background-color: white;
+            width: 95%;
+            border: 1px solid blue;
+            border-radius: 10px;
+            min-height: 100vh;
+            opacity: 0.8;
+        }
+
+        .grid-right-box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .grid1{
+            grid-row: span 2;
+        }
+        .grid2{
+        }
+        .grid3{
+        }
+
+       
+
+            
+
+        .grid-right-card{
+            border: 1px solid;
+            border-radius: 10px;
+        }
+
+        .grid-right-card-title{
+            border-bottom: 1px solid;
+            font-size: 25px;
+            font-style: bold;
+            text-align: center;
+            padding: 5px;
+            background-color: beige;
+        }
+
+        
+        .grid-right-card-title-blue{
+            border-bottom: 1px solid;
+            font-size: 25px;
+            font-style: bold;
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(101, 101, 235);
+        }
+
+        .grid-right-card-description{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .grid-left li{
+            font-size: 25px;
+            text-align: center;
+            color: rgb(194, 215, 220);
+            margin-top: 10px;
+            font-family: Dosis;
+            border-bottom: 1px solid black;
+        }
+
+        .grid-left li:hover{
+            color: rgb(125, 125, 233);
+            cursor: pointer;
+        }
+
+        
+        @media(max-width:830px){
+            .grid-content{
+                grid-template-columns: 2fr 10fr;
+            }
+        }
+
+        @media(max-width:640px){
+            .grid-right-box{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+
+        @media(max-width:480px){
+            .grid-right-box{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+
+        @media(max-width:320px){
+            .grid-right-box{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <p>HEADER</p>
+        </header>
+
+        <section class="middle">
+            <p class="middle-title">CONTEÚDO PRINCIPAL</p>
+
+            <div class="grid-content">
+
+                <div class="grid-left">
+
+                    <ul>
+                        <li id="item1">Adicionar Card</li>
+                        <li id="item2">Fundo Azul</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                        <li>Item 6</li>
+                    </ul>
+
+                </div>
+                <div class="grid-right">
+                    
+                    <div class="grid-right-box" id="grid-right-box">
+                    
+                        <div class="grid-right-card grid1" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid2" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid3">
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+
+                        <div class="grid-right-card grid1" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid2" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid3">
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+
+                        <div class="grid-right-card grid1" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid2" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid3">
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+
+                        <div class="grid-right-card grid1" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid2" >
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        <div class="grid-right-card grid3">
+                            <p class="grid-right-card-title">Title</p>
+                            <p class="grid-right-card-description">Descrition</p>
+                        </div>
+                        
+                       
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>FOOTER</p>
+        </footer>
+
+    </div>
+    <script>
+        console.log('teste');
+        var item = document.getElementById('item1');
+        var item2 = document.getElementById('item2');
+        var div = document.getElementById('grid-right-box');
+
+        
+
+        
+        item.onclick = function(){
+            console.log('clicou');
+            div.innerHTML += '<div class="grid-right-card"> '+
+                           ' <p class="grid-right-card-title">Title</p>'+
+                           ' <p class="grid-right-card-description">Descrition</p>'+
+                       ' </div>';
+        };
+
+        item2.onclick = function(){
+            var card = document.querySelectorAll('.grid-right-card');
+            card.forEach(element => {
+                console.log(element);
+                element.classList.add("grid-right-card-title-blue")
+                
+            });
+        };
+
+
+    </script>
+</body>
+</html>
