@@ -1,0 +1,15 @@
+﻿// Comando de compilação: sass --watch nomedoarquivo:style/nomedoarquivo.css
+// Comando de compilação: sass --watch variaveis.scss:style/variaveis.css
+
+$btn-color: red;
+$btn-width: 75px;
+
+.btn1{
+    width: $btn-width;
+    background-color: $btn-color;
+}
+
+.btn2{
+    width: $btn-width;
+    background-color: $btn-color;
+}

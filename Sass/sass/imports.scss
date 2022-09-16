@@ -1,0 +1,7 @@
+﻿// Comando de compilação: sass --watch imports.scss:style/imports.css
+
+//Import colors
+@import "./colors/colors.scss";
+
+//Import home
+@import "./pages/home.scss"
