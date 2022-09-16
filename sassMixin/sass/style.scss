@@ -1,0 +1,17 @@
+﻿// Comando de compilação: sass --watch style.scss:style/style.css
+
+//Utilizando o mixin
+@mixin text-style($color,$font-size,$font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+.texts{
+    h1{
+       @include text-style(red, 30px , Arial)
+    }
+    p{
+        @include text-style(blue, 15px , Arial)
+    }
+}
